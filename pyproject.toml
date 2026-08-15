@@ -1,0 +1,17 @@
+[project]
+name = "lmcache-mini"
+version = "0.1.0"
+description = "A minimal, pedagogical reimplementation of LMCache MP mode"
+requires-python = ">=3.10"
+dependencies = [
+    "pyzmq",
+    "blake3",
+    "torch",
+]
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["lmcache_mini*"]
